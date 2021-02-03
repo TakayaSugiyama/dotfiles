@@ -17,6 +17,7 @@ set statusline+=%{fugitive#statusline()}
 
 Plug 'nathanaelkane/vim-indent-guides'
 let g:indent_guides_enable_on_vim_startup = 1
+Plug 'editorconfig/editorconfig-vim'
 call plug#end()
 1
 nnoremap <leader>n :NERDTreeFocus<CR>

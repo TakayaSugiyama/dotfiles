@@ -9,17 +9,25 @@ set wrap
 set noswapfile
 set tabstop=2
 set shiftwidth=2
+
 call plug#begin('~/.vim/plugged')
+
 Plug 'scrooloose/nerdtree'
+
 Plug 'tpope/vim-fugitive'
 autocmd QuickFixCmdPost *grep* cwindow
 set statusline+=%{fugitive#statusline()}
 
 Plug 'nathanaelkane/vim-indent-guides'
 let g:indent_guides_enable_on_vim_startup = 1
+let g:indent_guides_auto_colors = 0
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=red  ctermbg=22
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=23
+let g:indent_guides_exclude_filetypes = ['nerdtree']
+
 Plug 'editorconfig/editorconfig-vim'
 call plug#end()
-1
+
 nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>

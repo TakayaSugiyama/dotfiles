@@ -27,6 +27,7 @@ autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=23
 let g:indent_guides_exclude_filetypes = ['nerdtree']
 
 Plug 'editorconfig/editorconfig-vim'
+Plug 'tpope/vim-endwise'
 call plug#end()
 
 nnoremap <leader>n :NERDTreeFocus<CR>

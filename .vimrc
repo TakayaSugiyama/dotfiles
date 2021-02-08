@@ -30,6 +30,8 @@ let g:indent_guides_exclude_filetypes = ['nerdtree']
 Plug 'editorconfig/editorconfig-vim'
 Plug 'tpope/vim-endwise'
 Plug 'vim-syntastic/syntastic'
+Plug 'preservim/nerdcommenter'
+let g:NERDCreateDefaultMappings = 1
 call plug#end()
 
 nnoremap <leader>n :NERDTreeFocus<CR>

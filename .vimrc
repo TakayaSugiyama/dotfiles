@@ -32,6 +32,7 @@ Plug 'tpope/vim-endwise'
 Plug 'vim-syntastic/syntastic'
 Plug 'preservim/nerdcommenter'
 let g:NERDCreateDefaultMappings = 1
+Plug 'cohama/lexima.vim'
 call plug#end()
 
 nnoremap <leader>n :NERDTreeFocus<CR>

@@ -1,3 +1,4 @@
 # Set Up
-- vim plugをインストール
-- pluginをインストール
+```
+$ source install.sh
+```

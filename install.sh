@@ -11,3 +11,5 @@ fi
 ln -s  ~/dotfiles/.vimrc  ~/.vimrc
 ln -s  ~/dotfiles/.zshrc  ~/.zshrc
 
+# vim pluginをインストール
+vim +PlugInstall +qall

@@ -77,6 +77,7 @@ source $ZSH/oh-my-zsh.sh
 export PATH="$PATH:`pwd`/flutter/bin"
 
 export PATH=$HOME/commands:$PATH
+export PATH=$HOME/.pytnv:$PATH
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -104,3 +105,4 @@ export PATH=$HOME/commands:$PATH
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 eval "$(rbenv init -)"
+eval "$(pyenv init -)"

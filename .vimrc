@@ -37,6 +37,8 @@ Plug 'tpope/vim-endwise'
 Plug 'preservim/nerdcommenter'
 " 閉じカッコを補完する
 Plug 'cohama/lexima.vim'
+" 補完
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 
 " vim-fugitiveの設定

@@ -78,6 +78,7 @@ export PATH="$PATH:`pwd`/flutter/bin"
 
 export PATH=$HOME/commands:$PATH
 export PATH=$HOME/.pytnv:$PATH
+export GOPATH=$HOME/go
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"

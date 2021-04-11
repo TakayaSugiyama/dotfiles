@@ -22,6 +22,8 @@ set shiftwidth=2
 set clipboard+=unnamed
 " 絶対パスを表示
 set statusline+=%F
+" 常にstatuslineを表示させる
+set laststatus=2
 " Leaderをスペースに設定する
 let mapleader = "\<Space>"
 

@@ -20,6 +20,8 @@ set noswapfile
 set shiftwidth=2
 " ヤンクしたコードをコピーする
 set clipboard+=unnamed
+" 絶対パスを表示
+set statusline+=%F
 " Leaderをスペースに設定する
 let mapleader = "\<Space>"
 

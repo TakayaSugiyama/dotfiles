@@ -24,6 +24,8 @@ set clipboard+=unnamed
 set statusline+=%F
 " 常にstatuslineを表示させる
 set laststatus=2
+" 行末の空白を保存時に自動削除する
+autocmd BufWritePre * :%s/\s\+$//e
 " Leaderをスペースに設定する
 let mapleader = "\<Space>"
 

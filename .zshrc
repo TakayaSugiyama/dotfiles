@@ -111,5 +111,6 @@ eval "$(goenv init -)"
 eval "$(rbenv init -)"
 eval "$(pyenv init -)"
 
+alias g="git"
 alias d='docker $*'
 alias d-c='docker-compose $*'

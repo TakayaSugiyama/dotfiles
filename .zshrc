@@ -114,3 +114,4 @@ eval "$(pyenv init -)"
 alias g="git"
 alias d='docker $*'
 alias d-c='docker-compose $*'
+alias be='bundle exec'

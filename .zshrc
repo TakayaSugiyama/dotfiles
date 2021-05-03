@@ -115,3 +115,7 @@ alias g="git"
 alias d='docker $*'
 alias d-c='docker-compose $*'
 alias be='bundle exec'
+
+function m2g() {
+	  command ffmpeg -i $1 -r 6 $1.gif
+}

@@ -45,8 +45,6 @@ Plug 'preservim/nerdcommenter'
 Plug 'cohama/lexima.vim'
 " 補完
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-" C言語の補完
-Plug 'justmao945/vim-clang'
 call plug#end()
 
 " vim-fugitiveの設定

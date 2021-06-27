@@ -26,6 +26,8 @@ set statusline+=%F
 set laststatus=2
 " 行末の空白を保存時に自動削除する
 autocmd BufWritePre * :%s/\s\+$//e
+" PodfileにRubyのシンタックスハイライトを当てる
+au BufNewFile,BufRead Podfile set filetype=ruby
 " Leaderをスペースに設定する
 let mapleader = "\<Space>"
 

@@ -26,6 +26,8 @@ set statusline+=%F
 set laststatus=2
 " 行末の空白を保存時に自動削除する
 autocmd BufWritePre * :%s/\s\+$//e
+" PodfileにRubyのシンタックスハイライトを当てる
+au BufNewFile,BufRead Podfile set filetype=ruby
 " Leaderをスペースに設定する
 let mapleader = "\<Space>"
 
@@ -48,6 +50,8 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 "Fancy status bar and tab line for Vim
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+" lint
+Plug 'dense-analysis/ale'
 call plug#end()
 
 " vim-fugitiveの設定
@@ -91,3 +95,9 @@ if has('syntax')
     augroup END
     call ZenkakuSpace()
 endif
+
+" Move window
+map sh <C-w>h
+map sk <C-w>k
+map sj <C-w>j
+map sl <C-w>l

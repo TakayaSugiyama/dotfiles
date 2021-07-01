@@ -45,6 +45,9 @@ Plug 'preservim/nerdcommenter'
 Plug 'cohama/lexima.vim'
 " 補完
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+"Fancy status bar and tab line for Vim
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 
 " vim-fugitiveの設定
@@ -65,6 +68,12 @@ nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
 let NERDTreeShowHidden = 1
 autocmd VimEnter * execute 'NERDTree'
+
+"Airlineの設定
+let g:airline#extensions#tabline#enabled = 1
+nnoremap <silent> , :bprev<CR>
+nnoremap <silent> . :bnext<CR>
+nnoremap bd :bd<CR>
 
 " nerdcommenterの設定
 let g:NERDCreateDefaultMappings = 1

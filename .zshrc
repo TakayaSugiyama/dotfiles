@@ -79,6 +79,7 @@ export PATH="$PATH:`pwd`/flutter/bin"
 export PATH=$HOME/commands:$PATH
 export GOENV_ROOT=$HOME/.goenv
 export PATH=$GOENV_ROOT/bin:$PATH
+export PATH="$HOME/go/bin:$PATH"
 eval "$(goenv init -)"
 
 # User configuration
@@ -119,3 +120,14 @@ alias be='bundle exec'
 function m2g() {
 	  command ffmpeg -i $1 -r 6 $1.gif
 }
+
+bindkey '^]' peco-src
+function peco-src() {
+    local src=$(ghq list --full-path | peco --query "$LBUFFER")
+		if [ -n "$src" ]; then
+        BUFFER="cd $src"
+				zle accept-line
+		fi
+		zle -R -c
+}
+zle -N peco-src

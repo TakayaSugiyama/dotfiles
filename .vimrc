@@ -24,6 +24,8 @@ set clipboard+=unnamed
 set statusline+=%F
 " 常にstatuslineを表示させる
 set laststatus=2
+" filetype プラグインによる indent を on にする
+filetype plugin indent on
 " 行末の空白を保存時に自動削除する
 autocmd BufWritePre * :%s/\s\+$//e
 " PodfileにRubyのシンタックスハイライトを当てる
@@ -52,6 +54,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 " lint
 Plug 'dense-analysis/ale'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 call plug#end()
 
 " vim-fugitiveの設定

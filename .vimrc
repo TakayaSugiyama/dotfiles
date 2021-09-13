@@ -30,7 +30,8 @@ autocmd BufWritePre * :%s/\s\+$//e
 au BufNewFile,BufRead Podfile set filetype=ruby
 " Leaderをスペースに設定する
 let mapleader = "\<Space>"
-
+" fileをfuzzy検索
+nnoremap <C-p> :CocList files<CR>
 "全てのプラグインをロードする
 packloadall
 " 全てのプラグイン用にヘルプファイルをロードする

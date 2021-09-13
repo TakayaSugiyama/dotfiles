@@ -104,3 +104,9 @@ map sh <C-w>h
 map sk <C-w>k
 map sj <C-w>j
 map sl <C-w>l
+
+set undofile
+if !isdirectory(expand("$HOME/.vim/undodir"))
+	  call mkdir(expand("$HOME/.vim/undodir"), "p")
+endif
+set undodir=$HOME/.vim/undodir

@@ -38,6 +38,8 @@ packloadall
 silent! helptags ALL
 " プラグイン管理 vim-plug
 call plug#begin('~/.vim/plugged')
+" grep
+Plug 'mileszs/ack.vim'
 " ファイルツリー
 Plug 'scrooloose/nerdtree'
 " Git ラッパー

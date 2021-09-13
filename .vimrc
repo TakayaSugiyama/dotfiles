@@ -17,7 +17,7 @@ set wrap
 " Vimが挿入するインデントの幅
 set shiftwidth=2
 " ヤンクしたコードをコピーする
-set clipboard+=unnamed
+set clipboard=unnamed,unnamedplus
 " 絶対パスを表示
 set statusline+=%F
 " 常にstatuslineを表示させる

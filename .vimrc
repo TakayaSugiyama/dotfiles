@@ -31,6 +31,10 @@ au BufNewFile,BufRead Podfile set filetype=ruby
 " Leaderをスペースに設定する
 let mapleader = "\<Space>"
 
+"全てのプラグインをロードする
+packloadall
+" 全てのプラグイン用にヘルプファイルをロードする
+silent! helptags ALL
 " プラグイン管理 vim-plug
 call plug#begin('~/.vim/plugged')
 " ファイルツリー

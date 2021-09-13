@@ -14,8 +14,6 @@ set smartcase
 set incsearch
 " 長くなってしまった時、折り返す
 set wrap
-" スワップファイルを作成しない
-set noswapfile
 " Vimが挿入するインデントの幅
 set shiftwidth=2
 " ヤンクしたコードをコピーする

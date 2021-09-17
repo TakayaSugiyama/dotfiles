@@ -17,7 +17,7 @@ set wrap
 " Vimが挿入するインデントの幅
 set shiftwidth=2
 " ヤンクしたコードをコピーする
-set clipboard=unnamed,unnamedplus
+set clipboard^=unnamed,unnamedplus
 " 絶対パスを表示
 set statusline+=%F
 " 常にstatuslineを表示させる
@@ -109,6 +109,12 @@ map sh <C-w>h
 map sk <C-w>k
 map sj <C-w>j
 map sl <C-w>l
+
+" coc setting
+let g:coc_global_extensions = ['coc-go', 'coc-sql', 'coc-solargraph', 'coc-json']
+
+"sql format
+xmap <leader>f  <Plug>(coc-format-selected)
 
 set undofile
 if !isdirectory(expand("$HOME/.vim/undodir"))

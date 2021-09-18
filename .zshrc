@@ -131,3 +131,5 @@ function peco-src() {
     zle -R -c
 }
 zle -N peco-src
+
+alias ctags='/usr/local/bin/ctags'

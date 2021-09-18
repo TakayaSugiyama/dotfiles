@@ -105,10 +105,10 @@ if has('syntax')
 endif
 
 " Move window
-map sh <C-w>h
-map sk <C-w>k
-map sj <C-w>j
-map sl <C-w>l
+noremap sh <C-w>h
+noremap sk <C-w>k
+noremap sj <C-w>j
+noremap sl <C-w>l
 
 " coc setting
 let g:coc_global_extensions = ['coc-go', 'coc-sql', 'coc-solargraph', 'coc-json']

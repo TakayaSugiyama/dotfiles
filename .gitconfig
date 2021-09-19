@@ -10,7 +10,7 @@
 [difftool]
 	prompt = false
 [difftool "vimdiff"]
-cmd = vimdiff "$LOCAL" "$REMOTE"
+	cmd = vimdiff "$LOCAL" "$REMOTE"
 [merge]
 	tool = vimdiff
 	conflictstyle = diff3

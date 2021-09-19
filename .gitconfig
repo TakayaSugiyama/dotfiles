@@ -1,0 +1,18 @@
+[user]
+	name = takayasugiyama
+	email = s.takaya1027@gmail.com
+[commit]
+	template = /Users/t-sugiyama/dotfiles/.commit_template
+[ghq]
+	root = /Users/t-sugiyama/go/1.15.3/src
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = false
+[difftool "vimdiff"]
+cmd = vimdiff "$LOCAL" "$REMOTE"
+[merge]
+	tool = vimdiff
+	conflictstyle = diff3
+[mergetool]
+	prompt = false

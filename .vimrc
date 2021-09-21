@@ -60,6 +60,7 @@ Plug 'vim-airline/vim-airline-themes'
 " lint
 Plug 'dense-analysis/ale'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 call plug#end()
 
 " vim-fugitiveの設定

@@ -112,8 +112,7 @@ noremap sj <C-w>j
 noremap sl <C-w>l
 
 " coc setting
-let g:coc_global_extensions = ['coc-go', 'coc-sql', 'coc-solargraph', 'coc-json', 'coc-prettier']
-command! -nargs=0 Prettier :CocCommand prettier.formatFile
+let g:coc_global_extensions = ['coc-go', 'coc-sql', 'coc-solargraph', 'coc-json', 'coc-prettier', 'coc-eslint']
 
 "sql format
 xmap <leader>f  <Plug>(coc-format-selected)

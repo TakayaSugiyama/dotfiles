@@ -133,3 +133,6 @@ function peco-src() {
 zle -N peco-src
 
 alias ctags='/usr/local/bin/ctags'
+
+# Added by serverless binary installer
+export PATH="$HOME/.serverless/bin:$PATH"

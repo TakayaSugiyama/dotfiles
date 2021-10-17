@@ -1,5 +1,7 @@
 " シンタックスハイライトを有効にする
 set syntax=on
+" tab => space
+:set expandtab
 " タブ文字の表示幅
 set tabstop=2
 " 行番号を表示させる

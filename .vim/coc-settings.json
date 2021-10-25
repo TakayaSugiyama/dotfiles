@@ -1,5 +1,10 @@
 {
   "suggest.enablePreview": true,
-  "coc.preferences.formatOnSaveFiletypes": ["css", "markdown", "json"],
+  "coc.preferences.formatOnSaveFiletypes": [
+    "css",
+    "markdown",
+    "json",
+    "javascript"
+  ],
   "eslint.autoFixOnSave": true
 }

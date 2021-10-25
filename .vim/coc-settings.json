@@ -4,7 +4,9 @@
     "css",
     "markdown",
     "json",
-    "javascript"
+    "javascript",
+    "typescript"
   ],
-  "eslint.autoFixOnSave": true
+  "eslint.autoFixOnSave": true,
+  "tsserver.enableJavascript": false
 }

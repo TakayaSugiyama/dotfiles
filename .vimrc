@@ -114,7 +114,10 @@ noremap sj <C-w>j
 noremap sl <C-w>l
 
 " coc setting
-let g:coc_global_extensions = ['coc-go', 'coc-sql', 'coc-solargraph', 'coc-json', 'coc-prettier', 'coc-eslint']
+let g:coc_global_extensions = ['coc-go', 'coc-sql', 'coc-solargraph', 'coc-json', 'coc-prettier', 'coc-eslint', 'coc-tsserver']
+" 補完のポップアップメニューの色を設定
+highlight Pmenu ctermfg=white ctermbg=black
+highlight PmenuSel ctermfg=white ctermbg=gray
 
 "sql format
 xmap <leader>f  <Plug>(coc-format-selected)

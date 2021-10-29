@@ -121,6 +121,8 @@ function m2g() {
 	  command ffmpeg -i $1 -r 6 $1.gif
 }
 
+EDITOR=vim
+
 bindkey '^]' peco-src
 function peco-src() {
     local src=$(ghq list --full-path | peco --query "$LBUFFER")

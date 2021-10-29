@@ -1,7 +1,7 @@
 " シンタックスハイライトを有効にする
 set syntax=on
 " tab => space
-:set expandtab
+set expandtab
 " タブ文字の表示幅
 set tabstop=2
 " 行番号を表示させる
@@ -40,6 +40,8 @@ packloadall
 silent! helptags ALL
 " プラグイン管理 vim-plug
 call plug#begin('~/.vim/plugged')
+" ダークテーマ
+Plug 'dracula/vim', { 'as': 'dracula'  }
 " grep
 Plug 'mileszs/ack.vim'
 " ファイルツリー
@@ -127,3 +129,8 @@ if !isdirectory(expand("$HOME/.vim/undodir"))
 	  call mkdir(expand("$HOME/.vim/undodir"), "p")
 endif
 set undodir=$HOME/.vim/undodir
+
+let g:dracula_italic = 0
+packadd! dracula
+syntax enable
+colorscheme dracula

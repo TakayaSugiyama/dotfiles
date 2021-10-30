@@ -154,3 +154,5 @@ alias ctags='/usr/local/bin/ctags'
 
 # Added by serverless binary installer
 export PATH="$HOME/.serverless/bin:$PATH"
+
+prompt_context(){  }

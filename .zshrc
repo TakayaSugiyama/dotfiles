@@ -122,6 +122,8 @@ function m2g() {
 }
 
 EDITOR=vim
+export ANDROID_SDK_HOME="~/Library/Android/Sdk"
+alias emulator="$ANDROID_SDK_HOME/emulator/emulator"
 
 bindkey '^]' peco-src
 function peco-src() {

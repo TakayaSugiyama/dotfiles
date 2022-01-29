@@ -148,5 +148,6 @@ alias ctags='/usr/local/bin/ctags'
 # Added by serverless binary installer
 export PATH="$HOME/.serverless/bin:$PATH"
 export PATH="$HOME/.anyenv/bin:$PATH"
+export PATH="$GOPATH/bin:$PATH"
 eval "$(anyenv init -)"
 prompt_context(){  }

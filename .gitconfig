@@ -2,7 +2,7 @@
 	name = takayasugiyama
 	email = s.takaya1027@gmail.com
 [commit]
-	template = /Users/t-sugiyama/dotfiles/.commit_template
+	template = ~/dotfiles/.commit_template
 [ghq]
 	root = /Users/t-sugiyama/go/1.15.3/src
 [diff]
@@ -18,3 +18,5 @@
 	prompt = false
 [init]
 	defaultBranch = main
+[core]
+	editor = vim

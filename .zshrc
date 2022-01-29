@@ -77,11 +77,6 @@ source $ZSH/oh-my-zsh.sh
 export PATH="$PATH:`pwd`/flutter/bin"
 
 export PATH=$HOME/commands:$PATH
-export GOENV_ROOT=$HOME/.goenv
-export PATH=$GOENV_ROOT/bin:$PATH
-export PATH="$HOME/go/bin:$PATH"
-eval "$(goenv init -)"
-
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -109,8 +104,6 @@ eval "$(goenv init -)"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 eval "$(rbenv init -)"
-eval "$(pyenv init -)"
-eval "$(anyenv init -)"
 
 alias g="git"
 alias d='docker $*'
@@ -151,10 +144,9 @@ function peco-select-history() {
 }
 zle -N peco-select-history
 bindkey '^r' peco-select-history
-
 alias ctags='/usr/local/bin/ctags'
-
 # Added by serverless binary installer
 export PATH="$HOME/.serverless/bin:$PATH"
-
+export PATH="$HOME/.anyenv/bin:$PATH"
+eval "$(anyenv init -)"
 prompt_context(){  }

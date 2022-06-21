@@ -75,6 +75,7 @@ plugins=(git rbenv ruby gitignore macos)
 source $ZSH/oh-my-zsh.sh
 
 export PATH="$PATH:`pwd`/flutter/bin"
+export PATH="$PATH":"$HOME/flutter/.pub-cache/bin"
 
 export PATH=$HOME/commands:$PATH
 # User configuration
@@ -86,7 +87,7 @@ export PATH=$HOME/commands:$PATH
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
+ export EDITOR='vim'
 # else
 #   export EDITOR='mvim'
 # fi
@@ -102,9 +103,6 @@ export PATH=$HOME/commands:$PATH
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-eval "$(rbenv init -)"
-
 alias g="git"
 alias d='docker $*'
 alias d-c='docker-compose $*'
@@ -151,3 +149,8 @@ export PATH="$HOME/.anyenv/bin:$PATH"
 export PATH="$GOPATH/bin:$PATH"
 eval "$(anyenv init -)"
 prompt_context(){  }
+
+alias cdk="npx aws-cdk"
+
+export DENO_INSTALL="$HOME/.deno"
+export PATH="$DENO_INSTALL/bin:$PATH"

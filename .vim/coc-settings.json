@@ -5,7 +5,9 @@
     "markdown",
     "json",
     "javascript",
-    "typescript"
+    "typescript",
+    "javascriptreact",
+    "typescriptreact"
   ],
   "eslint.autoFixOnSave": true,
   "tsserver.enableJavascript": false

@@ -24,6 +24,8 @@ set clipboard^=unnamed,unnamedplus
 set statusline+=%F
 " 常にstatuslineを表示させる
 set laststatus=2
+"
+set re=0
 " filetype プラグインによる indent を on にする
 filetype plugin indent on
 " 行末の空白を保存時に自動削除する

@@ -93,6 +93,7 @@ let g:airline#extensions#tabline#enabled = 1
 nnoremap <silent> , :bprev<CR>
 nnoremap <silent> . :bnext<CR>
 nnoremap bd :bd<CR>
+let g:ale_disable_lsp = 1
 
 " nerdcommenterの設定
 let g:NERDCreateDefaultMappings = 1

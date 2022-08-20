@@ -7,9 +7,13 @@
     "javascript",
     "typescript",
     "javascriptreact",
-    "typescriptreact"
+    "typescriptreact",
+    "ruby"
   ],
   "eslint.autoFixOnSave": true,
   "tsserver.enableJavascript": false,
-  "diagnostic.displayByAle": true
+  "diagnostic.displayByAle": true,
+  "solargraph.autoformat": true,
+  "solargraph.formatting": true,
+  "solargraph.definitions": true
 }

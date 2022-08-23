@@ -67,6 +67,8 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'dense-analysis/ale'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
+" GraphQL
+Plug 'jparise/vim-graphql'
 call plug#end()
 
 " vim-fugitiveの設定
@@ -119,7 +121,7 @@ noremap sj <C-w>j
 noremap sl <C-w>l
 
 " coc setting
-let g:coc_global_extensions = ['coc-go', 'coc-sql', 'coc-solargraph', 'coc-json', 'coc-prettier', 'coc-eslint', 'coc-tsserver', 'coc-lists']
+let g:coc_global_extensions = ['coc-go', 'coc-sql', 'coc-solargraph', 'coc-json', 'coc-prettier', 'coc-eslint', 'coc-tsserver', 'coc-lists', 'coc-graphql']
 " 補完のポップアップメニューの色を設定
 highlight Pmenu ctermfg=white ctermbg=black
 highlight PmenuSel ctermfg=white ctermbg=gray

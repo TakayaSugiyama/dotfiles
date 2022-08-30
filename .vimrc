@@ -26,6 +26,8 @@ set statusline+=%F
 set laststatus=2
 "
 set re=0
+" doc lang
+set helplang=ja
 " filetype プラグインによる indent を on にする
 filetype plugin indent on
 " 行末の空白を保存時に自動削除する
@@ -69,6 +71,7 @@ Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 " GraphQL
 Plug 'jparise/vim-graphql'
+Plug 'vim-jp/vimdoc-ja'
 call plug#end()
 
 " vim-fugitiveの設定

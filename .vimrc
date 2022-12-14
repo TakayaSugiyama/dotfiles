@@ -8,8 +8,8 @@ set tabstop=2
 set number
 " 検索結果のハイライト
 set hlsearch
-" 検索時の大文字小文字を区別しない
-set ignorecase
+" 検索時の大文字小文字を区別する
+set noignorecase
 " 検索パターンに大文字を含んでいたら大文字小文字を区別する
 set smartcase
 " インクリメンタルサーチ 1文字毎に検索を行う

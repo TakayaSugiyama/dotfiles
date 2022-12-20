@@ -108,6 +108,7 @@ export PATH=$HOME/commands:$PATH
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias g="git"
+alias gdc="git diff --cached"
 alias d='docker $*'
 alias d-c='docker-compose $*'
 alias be='bundle exec'

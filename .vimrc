@@ -71,6 +71,8 @@ Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 " GraphQL
 Plug 'vim-jp/vimdoc-ja'
+" ChatGPT
+Plug 'mattn/vim-chatgpt'
 call plug#end()
 
 " vim-fugitiveの設定

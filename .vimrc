@@ -69,8 +69,8 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'dense-analysis/ale'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
-" GraphQL
 Plug 'vim-jp/vimdoc-ja'
+Plug 'wakatime/vim-wakatime'
 call plug#end()
 
 " vim-fugitiveの設定

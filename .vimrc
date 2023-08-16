@@ -72,6 +72,7 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 Plug 'vim-jp/vimdoc-ja'
 Plug 'wakatime/vim-wakatime'
 Plug 'evanleck/vim-svelte'
+Plug 'github/copilot.vim'
 call plug#end()
 
 " vim-fugitiveの設定

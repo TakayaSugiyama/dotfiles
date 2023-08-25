@@ -80,6 +80,7 @@ source $ZSH/oh-my-zsh.sh
 
 export PATH="$PATH:`pwd`/flutter/bin"
 export PATH="$PATH":"$HOME/flutter/.pub-cache/bin"
+export PATH="$PATH:$HOME/.bun/bin"
 
 export PATH=$HOME/commands:$PATH
 # User configuration
@@ -160,8 +161,20 @@ alias cdk="npx aws-cdk"
 export DENO_INSTALL="$HOME/.deno"
 export PATH="$DENO_INSTALL/bin:$PATH"
 
+denkoh(){
+  echo -e "$1"|textimg -F$4|convert - txt:-|awk -F'[, ]' \
+  'NR>2{printf($1==0)?"\n":($4==0)?a:b}' a="$2" b="$3";echo
+}
+
 #source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'
 #source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
 
 # Fig post block. Keep at the bottom of this file.
 [[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
+
+# bun completions
+[ -s "/Users/t-sugiyama/.bun/_bun" ] && source "/Users/t-sugiyama/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"

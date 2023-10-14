@@ -166,6 +166,8 @@ denkoh(){
   'NR>2{printf($1==0)?"\n":($4==0)?a:b}' a="$2" b="$3";echo
 }
 
+export PATH="$HOME/chromedriver-mac-arm64:$PATH"
+
 #source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'
 #source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
 

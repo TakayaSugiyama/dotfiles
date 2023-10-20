@@ -180,3 +180,5 @@ export PATH="$HOME/chromedriver-mac-arm64:$PATH"
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+export MODULAR_HOME="/Users/t-sugiyama/.modular"
+export PATH="/Users/t-sugiyama/.modular/pkg/packages.modular.com_mojo/bin:$PATH"

@@ -28,6 +28,8 @@ set laststatus=2
 set re=0
 " doc lang
 set helplang=ja
+" show dialog
+set confirm
 " filetype プラグインによる indent を on にする
 filetype plugin indent on
 " 行末の空白を保存時に自動削除する
@@ -126,7 +128,7 @@ noremap sj <C-w>j
 noremap sl <C-w>l
 
 " coc setting
-let g:coc_global_extensions = ['coc-go', 'coc-sql', 'coc-solargraph', 'coc-json', 'coc-prettier', 'coc-eslint', 'coc-tsserver', 'coc-lists',  '@yaegassy/coc-tailwindcss3', 'coc-svelte', 'coc-prisma']
+let g:coc_global_extensions = ['coc-go', 'coc-sql', 'coc-solargraph', 'coc-json', 'coc-prettier', 'coc-eslint', 'coc-tsserver', 'coc-lists',  '@yaegassy/coc-tailwindcss3', 'coc-svelte', 'coc-prisma' , 'coc-pyright']
 " 補完のポップアップメニューの色を設定
 highlight Pmenu ctermfg=white ctermbg=black
 highlight PmenuSel ctermfg=white ctermbg=gray

@@ -9,7 +9,8 @@
     "javascriptreact",
     "typescriptreact",
     "ruby",
-    "prisma"
+    "prisma",
+    "c"
   ],
   "eslint.autoFixOnSave": true,
   "tsserver.enableJavascript": false,
@@ -29,5 +30,6 @@
       "trace.server": "verbose",
       "filetypes": ["typescript", "typescriptreact", "graphql"]
     }
-  }
+  },
+  "svelte.enable-ts-plugin": false
 }

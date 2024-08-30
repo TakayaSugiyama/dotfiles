@@ -133,21 +133,6 @@ function peco-src() {
 }
 zle -N peco-src
 
-function peco-select-history() {
-    local tac
-    if which tac > /dev/null; then
-        tac="tac"
-    else
-        tac="tail -r"
-    fi
-    BUFFER=$(\history -n 1 | \
-        eval $tac | \
-        peco --query "$LBUFFER")
-    CURSOR=$#BUFFER
-    zle clear-screen
-}
-zle -N peco-select-history
-bindkey '^r' peco-select-history
 alias ctags='/usr/local/bin/ctags'
 # Added by serverless binary installer
 export PATH="$HOME/.serverless/bin:$PATH"
@@ -155,6 +140,8 @@ export PATH="$HOME/.anyenv/bin:$PATH"
 export PATH="$GOPATH/bin:$PATH"
 eval "$(anyenv init -)"
 prompt_context(){  }
+
+export PATH="$HOME/.atuin/bin:$PATH"
 
 alias cdk="npx aws-cdk"
 
@@ -182,8 +169,20 @@ export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 export MODULAR_HOME="/Users/t-sugiyama/.modular"
 export PATH="/Users/t-sugiyama/.modular/pkg/packages.modular.com_mojo/bin:$PATH"
-
+if which trash-put &>/dev/null; then
+	alias rm=trash-put
+fi
 export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 alias ac="aicommits"
+
+
+export PATH="$HOME/bin:$PATH"
+autoload -U compinit
+compinit -i
+export PATH=$HOME/.local/bin:$PATH
+
+. "$HOME/.atuin/bin/env"
+
+eval "$(atuin init zsh)"

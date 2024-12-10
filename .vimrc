@@ -63,7 +63,7 @@ Plug 'preservim/nerdcommenter'
 " 閉じカッコを補完する
 Plug 'cohama/lexima.vim'
 " 補完
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neoclide/coc.nvim', {'branch': 'master'}
 "Fancy status bar and tab line for Vim
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -128,7 +128,7 @@ noremap sj <C-w>j
 noremap sl <C-w>l
 
 " coc setting
-let g:coc_global_extensions = ['coc-go', 'coc-sql', 'coc-solargraph', 'coc-json', 'coc-prettier', 'coc-eslint', 'coc-tsserver', 'coc-lists',  '@yaegassy/coc-tailwindcss3', 'coc-svelte', 'coc-prisma' , 'coc-pyright', 'coc-clangd']
+let g:coc_global_extensions = ['coc-go', 'coc-sql', 'coc-json', 'coc-prettier', 'coc-eslint', 'coc-tsserver', 'coc-lists',  '@yaegassy/coc-tailwindcss3', 'coc-svelte', 'coc-prisma' , 'coc-pyright', 'coc-clangd']
 " 補完のポップアップメニューの色を設定
 highlight Pmenu ctermfg=white ctermbg=black
 highlight PmenuSel ctermfg=white ctermbg=gray

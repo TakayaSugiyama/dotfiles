@@ -12,23 +12,39 @@
     "prisma",
     "c"
   ],
-  "eslint.autoFixOnSave": true,
-  "tsserver.enableJavascript": false,
   "diagnostic.displayByAle": true,
   "solargraph.autoformat": true,
   "solargraph.formatting": true,
   "solargraph.definitions": true,
+  "tsserver.log": "normal",
   "languageserver": {
     "dockerfile": {
       "command": "docker-langserver",
       "filetypes": ["dockerfile"],
       "args": ["--stdio"]
     },
-    "graphql": {
-      "command": "graphql-lsp",
-      "args": ["server", "-m", "stream"],
-      "trace.server": "verbose",
-      "filetypes": ["typescript", "typescriptreact", "graphql"]
+    "ruby-lsp": {
+      "command": "ruby-lsp",
+      "initializationOptions": {
+        "experimentalFeaturesEnabled": false,
+        "enabledFeatures": [
+          "codeActions",
+          "diagnostics",
+          "documentHighlights",
+          "documentLink",
+          "documentSymbols",
+          "foldingRanges",
+          "formatting",
+          "hover",
+          "inlayHint",
+          "onTypeFormatting",
+          "selectionRanges",
+          "semanticHighlighting",
+          "completion"
+        ],
+        "formatter": "auto"
+      },
+      "filetypes": ["ruby"]
     }
   },
   "svelte.enable-ts-plugin": false

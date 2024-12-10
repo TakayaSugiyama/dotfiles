@@ -74,7 +74,7 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git rbenv ruby gitignore macos)
+plugins=(git rbenv ruby gitignore macos emoji-clock)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -154,6 +154,7 @@ denkoh(){
 }
 
 export PATH="$HOME/chromedriver-mac-arm64:$PATH"
+export PATH="$HOME/.slack/bin/slack:$PATH"
 
 #source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'
 #source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
@@ -186,3 +187,4 @@ export PATH=$HOME/.local/bin:$PATH
 . "$HOME/.atuin/bin/env"
 
 eval "$(atuin init zsh)"
+export PATH="$(aqua root-dir)/bin:$PATH"

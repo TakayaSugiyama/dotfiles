@@ -13,9 +13,6 @@
     "c"
   ],
   "diagnostic.displayByAle": true,
-  "solargraph.autoformat": true,
-  "solargraph.formatting": true,
-  "solargraph.definitions": true,
   "tsserver.log": "normal",
   "languageserver": {
     "dockerfile": {

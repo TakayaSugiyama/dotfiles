@@ -63,7 +63,7 @@ Plug 'preservim/nerdcommenter'
 " 閉じカッコを補完する
 Plug 'cohama/lexima.vim'
 " 補完
-Plug 'neoclide/coc.nvim', {'branch': 'master'}
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 "Fancy status bar and tab line for Vim
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'

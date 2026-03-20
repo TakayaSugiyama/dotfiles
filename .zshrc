@@ -74,7 +74,7 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git rbenv ruby gitignore macos emoji-clock)
+plugins=(git ruby gitignore macos emoji-clock)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -83,6 +83,7 @@ export PATH="$PATH":"$HOME/flutter/.pub-cache/bin"
 export PATH="$PATH:$HOME/.bun/bin"
 
 export PATH=$HOME/commands:$PATH
+
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -139,6 +140,17 @@ export PATH="$HOME/.serverless/bin:$PATH"
 export PATH="$HOME/.anyenv/bin:$PATH"
 export PATH="$GOPATH/bin:$PATH"
 eval "$(anyenv init -)"
+eval "$(rbenv init -)"
+
+# Ruby paths - ensure chruby Ruby comes first in PATH
+#if [ -d "$HOME/.rubies" ]; then
+  #for ruby_dir in "$HOME/.rubies"/ruby-*; do
+    #if [ -d "$ruby_dir/bin" ]; then
+      #export PATH="$ruby_dir/bin:$PATH"
+    #fi
+  #done
+#fi
+
 prompt_context(){  }
 
 export PATH="$HOME/.atuin/bin:$PATH"
@@ -188,3 +200,13 @@ export PATH=$HOME/.local/bin:$PATH
 
 eval "$(atuin init zsh)"
 export PATH="$(aqua root-dir)/bin:$PATH"
+autoload -U compinit; compinit
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
+
+# opencode
+export PATH=/home/t-sugiyama/.opencode/bin:$PATH
+
+ZSH_DISABLE_COMPFIX=true
+
+eval "$(starship init zsh)"

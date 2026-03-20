@@ -10,6 +10,8 @@ fi
 # シンボリックリンクを貼る
 ln -s  ~/dotfiles/.vimrc  ~/.vimrc
 ln -s  ~/dotfiles/.zshrc  ~/.zshrc
+mkdir -p ~/.config
+ln -s  ~/dotfiles/.config/starship.toml  ~/.config/starship.toml
 
 # vim pluginをインストール
 vim +PlugInstall +qall
